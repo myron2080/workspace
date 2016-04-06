@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="robots" content="index">
+<meta name="googlebot" content="index">
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>乐盒饭</title>
+<link href="css/amazeui.css" type="text/css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<header data-am-widget="header" class="am-header am-header-orange">
+       
+        <h1 class="am-header-title">模拟入口</h1>
+    </header>
+
+
+
+<div class="btn"><a href="javascript:;" class="btnLinkRed" id="indexLink">点餐</a></div>
+
+<div class="btn"><a href="javascript:;" class="btnLinkRed" id="loginLink">团体</a></div>
+<div class="btn"><a href="javascript:;" class="btnLinkRed" id="accountLink">订单</a></div>
+
+<script language="JavaScript" type="text/javascript" src="js/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/amazeui.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/ajaxUtils.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/front-engine.js"></script>
+<script type="text/javascript">
+	//点餐
+	$("#indexLink").click(function(){
+		
+		window.location.href='index.html?code="test1111"';
+	})
+	//团体
+	$("#loginLink").click(function(){
+		window.location.href='login.html?code="test1111"';
+		
+	})
+	//订单
+	$("#accountLink").click(function(){
+		
+		window.location.href='account.html?code="test1111"';
+	})
+	
+</script>
+</body>
+</html>

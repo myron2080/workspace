@@ -1,0 +1,16 @@
+{
+  "resultMsg": "接口调用成功！",
+  "resultData": {
+    "wxjsConfig": {
+      "timestamp": "1459301949",
+      "appid": "wx06f6162b4304cf67",
+      "nonceStr": "c6aa22c9-4717-4ecd-8e22-e5d9ae48b1b8",
+      "jsapi_ticket": "sM4AOVdWfPE4DxkXGEs8VLaw2Xhfl9bfya-ySaBXTPQDUY70fx9Z6NKubBlf_2w8-OHl3wydFoWAV9HyjKiyaw",
+      "signature": "b8226916b9c40b5980e0f631e1c14691426c5ca0",
+      "url": "http://dev:8098/lunch/api?getDataIdent=Y&apiNumber=703_getwxjsConfig&params={}"
+    },
+    "STATE": "SUCCESS",
+    "MSG": "操作成功"
+  },
+  "resultType": 1
+}

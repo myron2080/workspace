@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>乐盒饭</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/amazeui.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<div class="confirmOrderDiv">
+    <header data-am-widget="header" class="am-header am-header-orange">
+        <div class="am-header-left am-header-nav">
+            <a href="javascript:history.go(-1);"><span class="am-icon-chevron-left"></span> </a>
+        </div>
+        <h1 class="am-header-title">确认订单</h1>
+    </header>
+    <div class="mainBlock" id="deliveryStyle">
+        <ul>
+            <li class="borGray">配送方式选择：</li>
+            <li class="borGray" id="selectTypeSite">自取站点：<span id="confirmSite2"></span> <span class="icon-siteListDiv  icon-selected"></span></li>
+            <li id="selectTypeDelivery"><span>5元送上门（满20份免费送上门）</span><span class="icon-siteListDiv"></span></li>
+        </ul>
+    </div>
+    <div class="mainBlock" id="typeSiteTake">
+        <ul>
+            <li class="borGray">联系人：<span id="contact1"></span></li>
+            <li class="borGray">电　话：<span id="tel1"></span><a href="tel.html" class="selectCouponLink"><span class="am-icon-chevron-right"></span></a></li>
+            <li class="confirmSite">取餐地点：<span id="confirmSite"></span><a href="selectSite.html" class="selectSiteLink mySiteLink"><span class="am-icon-chevron-right"></span></a></li>
+        </ul>
+    </div>
+    <div class="mainBlock" id="typeDelivery" style="display: none;">
+        <ul>
+            <li class="borGray">联系人：<span id="contact2"></span></li>
+            <li class="borGray">电　话：<span id="tel2"></span></li>
+            <li class="confirmDelivery">送餐地址：<span id="confirmDelivery"></span><a href="address.html" class="selectSiteLink mySiteLink"><span class="am-icon-chevron-right"></span></a></li>
+        </ul>
+    </div>
+
+    <div class="mainBlock">
+        <div class="orderInfo">
+            <div class="orderMenu confirmOrderMenu">
+                <ul class="borGray" id="confirmOrderMenu-ul">
+
+                </ul>
+                <div class="orderMoney">共<span id="numTotal">4</span>份</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainBlock">
+        <ul>
+            <li class="borGray">优惠券（<span id="canUseCouponsCount"></span>）<a href="coupon.html" class="selectCouponLink"><span id="couponLink"></span> <span class="am-icon-chevron-right"></span></a></li>
+            <li class="borGray" id="dispatchFee" style="display: none;">配送费<div class="deliveryMoney" id="deliveryMoney"><span></span>元</div></li>
+            <li class="orderMoney">应付金额：<span id="priceTotal">35</span>元</li>
+        </ul>
+    </div>
+
+    <div class="btn">
+        <a href="javascript:;" class="btnLinkRed btnPay" id="confirmOrderBtn">确认订单</a>
+    </div>
+
+</div>
+
+<script language="JavaScript" type="text/javascript" src="js/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/amazeui.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/ajaxUtils.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/order/confirmOrder.js"></script>
+<script type="text/javascript">
+    $(function(){
+        if(typeof(Storage)!=="undefined")
+        {
+            //console.log(sessionStorage.userID);
+            //console.log(sessionStorage.urlIndex);
+            $("#contact").text("联系人："+sessionStorage.userID);
+            $("#tel").text("电话："+sessionStorage.userTel);
+        }
+        else
+        {
+            console.log("没有用户ID！");
+        }
+
+        confirmOrderContent();
+    });
+</script>
+</body>
+</html>

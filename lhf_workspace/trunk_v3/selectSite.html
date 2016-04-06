@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>乐盒饭</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/amazeui.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<div class="selectSiteDiv">
+    <header data-am-widget="header" class="am-header am-header-orange">
+        <div class="am-header-left am-header-nav">
+            <a href="javascript:history.go(-1);"><span class="am-icon-chevron-left"></span> </a>
+        </div>
+        <h1 class="am-header-title">选择站点  </h1>
+    </header>
+    <div class="siteCity"><span class="am-icon-map-marker am-icon-md"></span>城市：深圳</div>
+    <div class="sitePointList">
+
+    </div>
+</div>
+
+<script language="JavaScript" type="text/javascript" src="js/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/amazeui.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/ajaxUtils.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/address/selectSite.js"></script>
+<script type="text/javascript">
+    $(function(){
+        sitePointListFun();
+    });
+
+
+</script>
+</body>
+</html>

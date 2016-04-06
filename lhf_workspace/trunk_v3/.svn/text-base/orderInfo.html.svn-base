@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>乐盒饭</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<link rel="stylesheet" href="css/amazeui.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<div class="confirmOrderDiv">
+  <header data-am-widget="header" class="am-header am-header-orange">
+    <div class="am-header-left am-header-nav"> <a href="javascript:history.go(-1);"><span class="am-icon-chevron-left"></span> </a> </div>
+    <h1 class="am-header-title">确认详情</h1>
+  </header>
+  <div class="orderListDiv">
+    <div class="orderList"></div>
+  </div>
+  <div class="perOrderInfo">
+	<ul>
+		<li>本单由乐盒饭提供配送和售后服务</li>
+		<li class="counterpoint">配送站点：芒果网大厦1楼大厅A柜22号</li>
+		<li class="contact">联系人　：小孩儿 先生</li>
+		<li class="tel">电　　话：13265326664</li>
+		<!--以下是交易已完成时才有-->
+		<li class="borWhite qucanTime">取餐时段：12：00~12:05 </li>
+		<li class="issueReview">
+			<div class="issueReviewDiv">
+				菜品评价：
+				<form><div class="issueReviewText"><textarea placeholder="我来说说" class="txt_notice"></textarea></div></form>
+			</div>
+		</li>
+	</ul>
+  </div>
+  <div class="reminder"><i class="am-icon-bell-o"></i> 温馨提示：请及时取餐！ </div>
+
+  <div class="btn"><a class="btnLinkRed receiptLink" href="#">确认收货</a></div>
+</div>
+<script language="JavaScript" type="text/javascript" src="js/jquery.min.js"></script> 
+<script language="JavaScript" type="text/javascript" src="js/amazeui.js"></script> 
+<script language="JavaScript" type="text/javascript" src="js/ajaxUtils.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/front-engine.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/detail.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/control/pay/pingpp.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/order/order.js"></script>
+<script type="text/javascript">
+    $(function(){
+        if(typeof(Storage)!=="undefined")
+        {
+            //console.log(sessionStorage.userID);
+            //console.log(sessionStorage.userTel);
+            $("#contact").text("联系人："+sessionStorage.userID);
+            $("#tel").text("电话："+sessionStorage.userTel);
+        }
+        else
+        {
+            console.log("没有用户ID！");
+        }
+        getOrderIDFun();
+
+
+    });
+
+</script>
+</body>
+</html>

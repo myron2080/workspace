@@ -1,0 +1,56 @@
+{
+  "resultMsg": "接口调用成功！",
+  "resultData": {
+    "coupons": [
+      {
+        "overdue": false,
+        "isUser": 0,
+        "overdueDate": "2016-06-06",
+        "couponsId": "fb26a223-e7f0-46af-b4f2-b0dd8df29761",
+        "couponsName": "用户现金券",
+        "par": 5
+      },
+        {
+            "overdue": false,
+            "isUser": 0,
+            "overdueDate": "2016-06-05",
+            "couponsId": "fb26a223-e7f0-46af-b4f2-b0dd8df29762",
+            "couponsName": "红包",
+            "par": 15
+        },
+        {
+            "overdue": false,
+            "isUser": 0,
+            "overdueDate": "2016-06-04",
+            "couponsId": "fb26a223-e7f0-46af-b4f2-b0dd8df29763",
+            "couponsName": "优惠券",
+            "par": 5
+        },
+        {
+            "overdue": true,
+            "isUser": 0,
+            "overdueDate": "2016-06-03",
+            "couponsId": "fb26a223-e7f0-46af-b4f2-b0dd8df29764",
+            "couponsName": "金砖",
+            "par": 5
+        },
+        {
+            "overdue": true,
+            "isUser": 0,
+            "overdueDate": "2016-06-02",
+            "couponsId": "fb26a223-e7f0-46af-b4f2-b0dd8df29765",
+            "couponsName": "金条",
+            "par": 5
+        },
+        {
+            "overdue": true,
+            "isUser": 0,
+            "overdueDate": "2016-06-01",
+            "couponsId": "fb26a223-e7f0-46af-b4f2-b0dd8df29766",
+            "couponsName": "金条",
+            "par": 5
+        }
+    ]
+  },
+  "resultType": 1
+}

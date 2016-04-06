@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="robots" content="index">
+<meta name="googlebot" content="index">
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>乐盒饭</title>
+<link href="css/amazeui.css" type="text/css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+    <div class="picDiv"></div>
+  <div class="proname"></div>
+</div>
+<div></div>
+<div class="prodetailname">
+  <div class="numDiv">
+    <div class="minus circle" onclick="minusFun(this)"><span class="am-icon-minus am-icon-md"></span></div>
+    <div class="num">0</div>
+    <div class="plus circle" onclick="plusFun(this);addCarListShow(this);"><span class="am-icon-plus am-icon-md"></span></div>
+  </div>
+  <dl>
+    <dt><b>￥15</b><del>￥20</del></dt>
+  </dl>
+</div>
+<div class="reminder"><i class="am-icon-bell-o"></i> 温馨提示：图片均是实物拍摄，高峰时段恶劣天气请在11：00前完成下单。 </div>
+<article data-am-widget="paragraph" class="am-paragraph am-paragraph-default proinfo" data-am-paragraph="{ tableScrollable: true, pureview: true }">
+  <div id="proinfo"></div>
+</article>
+<div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" >
+  <h2 class="am-titlebar-title"> <i class="am-icon-comment"></i> 评论（<span id="numDishesContent"></span>） </h2>
+  <div class="navright"> <a href="javascript:;" class="saveDishesLikeHeart"><i class="am-icon-heart-o"></i></a><span id="numLinkUser">236</span>人喜欢</div>
+</div>
+<div class="commentform2">
+  <form method="post">
+    <textarea placeholder="说点什么吧…" title="Ctrl+Enter快捷提交" name="message"></textarea>
+    <a class="ds-post-button2 replyLink">发布</a>
+  </form>
+</div>
+<article class="am-comment">
+  <div class="commentbody">
+    <ul class="am-comments-list am-comments-list-flip" id="commentContent-ul">
+
+    </ul>
+  </div>
+</article>
+<!--购物车部分-->
+<div class="selectOk">
+  <div class="selectOkDiv">
+    <div class="car"> <span class="icon-shopping-cart"></span> <span id="end" class="carNum">0</span><!--如果数字为0的时候该span的display属性为none--> 
+    </div>
+    <div class="money" id="sumMoney">共<span>￥0</span></div>
+    <div class="btnSelectOK"><a href="confirmOrder.html">选好了</a></div>
+  </div>
+</div>
+<!--已选菜单列表-->
+<div class="orderSelectOkDiv" style="display: none;">
+    <div class="carAndClear ">
+        <p>购物车</p>
+        <a class="clearAll" href="javascript:;" onclick="clearAllCar();">清空全部</a> </div>
+    <div class="orderOkList">
+        <ul id="orderOkList-ul">
+
+        </ul>
+    </div>
+</div>
+<!--已选菜单列表--结束-->
+</div>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/amazeui.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/front-engine.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/ajaxUtils.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/index/index.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/detail/detail.js"></script>
+<script type="text/javascript">
+    $(function(){
+        proDetailShow(); //调用方法
+        getDishesContent();
+        saveDishesLikeFun();
+        
+        setTimeout(function(){
+            initializationFun();
+        },1000);
+        //购物车内容列表隐藏和展示效果
+        $(".car").click(function(){
+            $(".orderSelectOkDiv").toggle(500);
+        });
+
+
+    });
+</script>
+</body>
+</html>

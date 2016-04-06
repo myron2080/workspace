@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/lunch-weixin/!svn/ver/1169/trunk_v3/data
+END
+toConfirmOrderInfo.json
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/lunch-weixin/!svn/ver/1120/trunk_v3/data/toConfirmOrderInfo.json
+END
+getAddressDetail.json
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/lunch-weixin/!svn/ver/1108/trunk_v3/data/getAddressDetail.json
+END
+getDishesContent.json
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/lunch-weixin/!svn/ver/1091/trunk_v3/data/getDishesContent.json
+END
+updateUserPhone.json
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/lunch-weixin/!svn/ver/1110/trunk_v3/data/updateUserPhone.json
+END
+getDishesList.json
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/lunch-weixin/!svn/ver/1094/trunk_v3/data/getDishesList.json
+END
+getMyOrderList.json
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/lunch-weixin/!svn/ver/1152/trunk_v3/data/getMyOrderList.json
+END
+getUserAddressList.json
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/lunch-weixin/!svn/ver/1091/trunk_v3/data/getUserAddressList.json
+END
+getwxjsConfig.json
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/lunch-weixin/!svn/ver/1127/trunk_v3/data/getwxjsConfig.json
+END
+getOneAgain.json
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/lunch-weixin/!svn/ver/1137/trunk_v3/data/getOneAgain.json
+END
+updateOrderStatus.json
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/lunch-weixin/!svn/ver/1169/trunk_v3/data/updateOrderStatus.json
+END
+getBannerTip.json
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/lunch-weixin/!svn/ver/1091/trunk_v3/data/getBannerTip.json
+END
+getCounterPointList.json
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/lunch-weixin/!svn/ver/1091/trunk_v3/data/getCounterPointList.json
+END
+getCounterPointFloorList.json
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/lunch-weixin/!svn/ver/1091/trunk_v3/data/getCounterPointFloorList.json
+END
+getNearbyPoint.json
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/lunch-weixin/!svn/ver/1091/trunk_v3/data/getNearbyPoint.json
+END
+getUserInfo.json
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/lunch-weixin/!svn/ver/1091/trunk_v3/data/getUserInfo.json
+END
+getMyCoupons.json
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/lunch-weixin/!svn/ver/1094/trunk_v3/data/getMyCoupons.json
+END
+getAuthCode.json
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/lunch-weixin/!svn/ver/1091/trunk_v3/data/getAuthCode.json
+END
+updateAddressStatus.json
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/lunch-weixin/!svn/ver/1091/trunk_v3/data/updateAddressStatus.json
+END
+indexbanner.json
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/lunch-weixin/!svn/ver/1091/trunk_v3/data/indexbanner.json
+END
+getShoppingCartList.json
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/lunch-weixin/!svn/ver/1157/trunk_v3/data/getShoppingCartList.json
+END
+getChargeByOrderId.json
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/lunch-weixin/!svn/ver/1123/trunk_v3/data/getChargeByOrderId.json
+END
+getOrderDetail.json
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/lunch-weixin/!svn/ver/1166/trunk_v3/data/getOrderDetail.json
+END
+getBannerList.json
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/lunch-weixin/!svn/ver/1091/trunk_v3/data/getBannerList.json
+END
+getDishesDetail.json
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/lunch-weixin/!svn/ver/1094/trunk_v3/data/getDishesDetail.json
+END
+getConfirmOrderInfo.json
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/lunch-weixin/!svn/ver/1134/trunk_v3/data/getConfirmOrderInfo.json
+END

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="robots" content="index">
+<meta name="googlebot" content="index">
+<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>乐盒饭</title>
+<link rel="stylesheet" href="css/amazeui.css" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="couponDiv">
+    <header data-am-widget="header" class="am-header am-header-orange">
+        <div class="am-header-left am-header-nav">
+            <a href="javascript:history.go(-1);"><span class="am-icon-chevron-left"></span> </a>
+        </div>
+        <h1 class="am-header-title">确认订单</h1>
+    </header>
+    <div class="couponList">
+        <ul id="couponList-ul"><!--  unexpired  是没有过期的-->
+
+        </ul>
+    </div>
+</div>
+
+<script language="JavaScript" type="text/javascript" src="js/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/amazeui.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/ajaxUtils.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/coupon/coupon.js"></script>
+<script type="text/javascript">
+    $(function(){
+        if(typeof(Storage)!=="undefined")
+        {
+            //console.log(sessionStorage.userID);  console.log(sessionStorage.userTel);
+        }
+        else
+        {
+            console.log("没有用户ID！");
+        }
+        getCouponFun();
+    });
+</script>
+</body>
+</html>

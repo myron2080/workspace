@@ -1,0 +1,391 @@
+
+
+接口编号：1(完成)
+接口说明：获取查询列表
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getDishesList&params={%22page%22:1,%22pageSize%22:10}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"page":1,"pageSize":10,"recordCount":9,"item":[{"id":"4c868950-5e3f-43ba-ae14-dae2811c00ac","effectChartUrl":"size.jpg","name":"花生猪手","soldCount":254,"dishesLabelEnum":"COMMON","dishesLabelEnumName":"普通","limitSaleNum":0,"realPrice":15,"suggestPrice":20}]},"resultType":1}
+
+
+接口编号：2(完成) getAuthCode.json
+接口说明：获取短信验证码
+接口路径：http://dev:8098/lunch/api?getDataIdent=Y&apiNumber=703_getAuthCode&params={%22phone%22:%2213410708312%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"STATE":"SUCCESS","MSG":"发送成功"},"resultType":1}
+
+
+接口编号：3(完成)
+接口说明：获取首页提示
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getBannerTip&params={}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"INDEX_TIPS":"请在11:00前完成订单"},"resultType":1}
+
+
+接口编号：4(完成)
+接口说明：获取最近站点
+接口路径：http://dev:8098/lunch/api?getDataIdent=Y&apiNumber=703_getNearbyPoint&params={%22userId%22:%2200066871e24640788596fc2bd66ee699%22,%22longitude%22:%22113.930847%22,%22latitude%22:%2222.526886%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"id":"643cb4b9-7583-49be-b852-6787e0746cb7","name":"科技园大厦（金融基地）"},"resultType":1}
+
+
+接口编号：5(完成)
+接口说明：获取菜品信息
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getDishesDetail&params={%22dishesId%22:%22d67cecbd-8d6b-4c15-96ce-b53f207dfdcf%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+
+接口编号：6(完成)
+接口说明：更新用户默认站点
+接口路径：/api?getDataIdent=Y&apiNumber=703_updateUserCPointById & params={"userId":"xxx","CPointById":"xxx"}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"STATE":"SUCCESS","MSG":"保存成功"},"resultType":1}
+
+
+
+接口编号：7(完成)
+接口说明：获取banner图
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getBannerList&params={}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"bannerList":[]},"resultType":1}
+
+
+
+
+
+接口编号：8(完成)
+接口说明：获取站点列表
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getCounterPointList&params={%22page%22:1,%22pageSize%22:10}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"page":2,"pageSize":10,"recordCount":13,"item":[{"id":"725fb33c-145e-4f30-9eec-4121adae7d0c","imgpath1":"size.jpg","name":"软件园一期中央广场","simplePinyin":"软件园中央广场"}]},"resultType":1}
+
+
+
+
+接口编号：9(完成)
+接口说明：获取我的订单列表
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getMyOrderList&params={%22userId%22:%22002c4cd11b694ff7a4a630b731233467%22,%22page%22:1,%22pageSize%22:10}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"page":1,"pageSize":10,"recordCount":1,"orderList":[{"Id":"bebc892d-163d-4a45-88e1-06ada844f06d","orderNmber":"201601180022","totalPrice":15,"orderStatus":"ALREADYPAYMENT","orderStatusName":"已支付","orderDetailList":[{"dishesId":"84fcad90-4c4d-4dab-868c-30aa58f364ea","dishesName":"啤酒鸭","copiesCount":1,"realPrice":15}]}]},"resultType":1}
+
+
+接口编号：10(完成)
+接口说明：获取我的优惠券
+
+		/api?getDataIdent=Y&apiNumber=703_getMyCoupons&params={"userId":"","overdueDateStr":"可为空","isUse":"可为空"} 
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getMyCoupons&params={"userId":"002c4cd11b694ff7a4a630b731233467"}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+
+
+接口编号：11(完成)
+接口说明：保存菜品加入购物车
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_saveShoppingCart&params={"cartStr":[{"dishesId":"xxx","dishesCount":2},{"dishesId":"xxx","dishesCount":2}],"userId":"xxx"}  
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+
+
+接口编号：12(完成)
+接口说明：获取我的购物车列表
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getShoppingCartList&params={%22userId%22:%22002c4cd11b694ff7a4a630b731233467%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+接口编号：13(完成)saveDishesContent
+接口说明：保存菜品评论信息
+接口路径：http://dev:8098/lunch/api?getDataIdent=Y&apiNumber=703_saveDishesContent&params={%22dishesIdOrOrderId%22:%22f48aa6d2-628b-485b-9a09-5a9219298945%22,%22userId%22:%22002c4cd11b694ff7a4a630b731233467%22,%22type%22:%22dishes%22,%22content%22:%22qqqqqqqqqqqqq%22}
+									/api?getDataIdent=Y&apiNumber=703_saveDishesContent&params={"dishesIdOrOrderId":"xxx","userId":"xxx","type":"xxx","content":"xxx"}
+									
+									type：dishes  菜品 ，order 订单
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"STATE":"SUCCESS","MSG":"评论成功"},"resultType":1}
+
+
+接口编号：14(完成)	修改购物车列表
+接口说明：再来一单
+接口路径：http://localhost:8282/web/api?getDataIdent=Y&apiNumber=703_getOneAgain&params={%22orderId%22:%22bebc892d-163d-4a45-88e1-06ada844f06d%22,%22userId%22:%22002c4cd11b694ff7a4a630b731233467%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"STATE":"SUCCESS","MSG":"操作成功","USERID":"002c4cd11b694ff7a4a630b731233467"},"resultType":1}
+
+
+
+接口编号：15(完成)getConfirmOrderInfo.json
+接口说明：获取确认订单信息
+接口路径：http://localhost:8282/web/api?getDataIdent=Y&apiNumber=703_getConfirmOrderInfo&params={"userId":"002c4cd11b694ff7a4a630b731233467"}   
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+
+
+接口编号：16(完成)
+接口说明：确认订单信息
+接口路径：  /api?getDataIdent=Y&apiNumber=703_toConfirmOrderInfo&params={"userId":"002c4cd11b694ff7a4a630b731233467","counterpointId":"配送站点id","isUseCoupons":"是否使用优惠券","userCouponsId":"用户关联的优惠券中间表id","orderType":"订单类型：COMMON(","teamId":"团体账号id","isDispatch":"是否使用配送服务","dispatchFee":"配送费用","counterPointFloorId":"站点关联楼栋的中间表id","floorId":"l楼栋id","disAddress":"配送地址（全地址）","linkName":"联系人","linkTel":"联系电话"}
+	测试数据： 	/api?getDataIdent=Y&apiNumber=703_toConfirmOrderInfo&params={"userId":"002c4cd11b694ff7a4a630b731233467","counterpointId":"87065d5c-9f13-4681-9676-d039a80ee679","isUseCoupons":0,"userCouponsId":"","orderType":"BOOK","teamId":"","isDispatch":0,"dispatchFee":"0","counterPointFloorId":"3be2355c-6a90-4d64-b209-3990491ececf","floorId":"bc7e701e-2df0-4d8a-9ab6-6c8550f565d5","disAddress":"7楼701号非凡之星","linkName":"独孤一剑","linkTel":"13410708312"}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：userId 用户id, String counterpointId 配送站点id, int isUseCoupons
+	 *            是否使用优惠券1：使用，0：不使用, String userCouponsId 用户关联的优惠券, String
+	 *            orderType 订单类型COMMON("普通", "COMMON"), BOOK("预订", "BOOK"), TEAM("团体", "TEAM"), int isDispatch 是否使用配送服务；1：使用，0：不使用, String
+	 *            dispatchFee 配送费用, String counterPointFloorId 站点关联楼栋id, String
+	 *            floorId 楼栋id, String linkName 联系人名, String linkTel 联系电话
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"ORDERID":"08f8e31a-552b-4a8d-9900-c23f505bd440","STATE":"SUCCESS","MSG":"下单成功"},"resultType":1}
+
+
+
+
+接口编号：17(未完成)
+接口说明：获取支付请求参数
+接口路径：   /api?getDataIdent=Y&apiNumber=703_getChargeByOrderId&params={"orderId":"9a83610c-fb6f-4c12-a123-a01a2f6eb72d"}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+接口编号：18(完成)getDishesContent.json
+接口说明：获取菜品评论信息
+接口路径：http://dev:8098/lunch/api?getDataIdent=Y&apiNumber=703_getDishesContent&params={%22dishesIdOrOrderId%22:%22f48aa6d2-628b-485b-9a09-5a9219298945%22,%22userId%22:%22002c4cd11b694ff7a4a630b731233467%22,page:1,pageSize:10}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+
+
+
+接口编号：19(完成)	getUserInfo.json
+接口说明：获取用户信息
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getUserInfo&params={%22userId%22:%22002c4cd11b694ff7a4a630b731233467%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"data":{"id":"002c4cd11b694ff7a4a630b731233467","nickName":"刘雨","headPhoto":"http://wx.qlogo.cn/mmopen/MVGGo0fbSedl893m54gTwbicUG0wrjssyx06yoYTrS6ke7eoT0sjCF4dvLL27oqjIQTvfd5hdibiaTp9xS3HXuU8Oc9YfL8jqUr/0","phoneNumber":"13410708312","sexEnum":"MAN","isBlacklist":0,"isDeliveryStaff":1,"latitude":"22.526918","longitude":"113.930618","counterpointId":"87065d5c-9f13-4681-9676-d039a80ee679","counterpointName":"芒果网大厦一楼大厅","counterpointDesc":"芒果网大厦(内部员工专供)","counterPointFloorId":"","teamId":"","teamName":""},"STATE":"SUCCESS","MSG":"操作成功"},"resultType":1}
+
+
+
+接口编号：20(完成)
+接口说明：团体登录入口
+接口路径：http://localhost:8282/web/api?getDataIdent=Y&apiNumber=703_teamLogin&params={%22account%22:%22123456%22,%22password%22:%22123456%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"data":{"id":"E10ADC3949BA59ABBE56E057F20F883E","account":"123456","teamName":"测试数据勿动","telephone":"","address":"","createTime":"2016-03-10"},"STATE":"SUCCESS","MSG":"登录成功"},"resultType":1}
+
+
+
+
+接口编号：21(完成)	getCounterPointFloorList
+接口说明：获取站点和楼栋级联
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getCounterPointFloorList&params={%22page%22:1,%22pageSize%22:10}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+
+
+接口编号：22(完成)
+接口说明：保存菜品喜欢
+接口路径：http://localhost:8282/web/api?getDataIdent=Y&apiNumber=703_saveDishesLike&params={%22dishesId%22:%224c868950-5e3f-43ba-ae14-dae2811c00ac%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"STATE":"SUCCESS","MSG":"保存点赞次数成功"},"resultType":1}
+
+
+
+接口编号：23(完成)		getUserAddressList
+接口说明：获取用户配送地址列表
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getUserAddressList&params={%22userId%22:%22002c4cd11b694ff7a4a630b731233467%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"addressCount":1,"addressList":[{"Id":"06af59af1be240528d040227af06d798","counterpointfloorId":"3be2355c-6a90-4d64-b209-3990491ececf","isDefaul":"YES","isEnable":1,"counterPointId":"芒果网大厦一楼大厅","floorId":"芒果网大厦","address":"7楼701号非凡之星"}]},"resultType":1}
+
+
+接口编号：24(完成)	getAddressDetail
+接口说明：获取配送地址详情		
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_getAddressDetail&params={%22addressId%22:%2206af59af1be240528d040227af06d798%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+
+
+接口编号：25(完成)
+接口说明：新增/修改配送地址
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_updateUserAddress & params={"addressId":"xxx","userId":"xxx","counterpointfloorId":"xxx","address":"xxx","layer":"xxx","number":"xxx","companyName":"xxx"}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"STATE":"SUCCESS","MSG":"新增配送地址成功"},"resultType":1}
+
+
+接口编号：26(完成)
+接口说明：删除配送地址
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_delUserAddress&params={"addressId":"xxx"}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+
+接口编号：27(完成)
+接口说明：修改默认配送地址
+接口路径：http://192.168.1.231:8585/web/api?getDataIdent=Y&apiNumber=703_updateAddressStatus&params={%22addressId%22:%2206af59af1be240528d040227af06d798%22,%22userId%22:%22002c4cd11b694ff7a4a630b731233467%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"STATE":"SUCCESS","MSG":"操作成功"},"resultType":1}
+
+
+
+
+
+接口编号：28(完成)
+接口说明： 获取订单详情  getOrderDetail
+接口路径：http://localhost:8282/web/api?getDataIdent=Y&apiNumber=703_getOrderDetail&params={%22orderId%22:%22bebc892d-163d-4a45-88e1-06ada844f06d%22}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+
+
+接口编号：29(完成) 订单状态： ALREADYSUBMIT("已提交", "ALREADYSUBMIT"), ALREADYPAYMENT("已支付", "ALREADYPAYMENT"), ALREADYFINISH("已完成", "ALREADYFINISH"), APPLYCHARGEBACK("申请退单", "APPLYCHARGEBACK"), DRAWBACKING("退款中", "DRAWBACKING"),ALREADYCHARGEBACK(
+			"已退单", "ALREADYCHARGEBACK"), PRESENTATION("赠送", "PRESENTATION"),ALREADYCANCEL("已取消", "ALREADYCANCEL"
+接口说明： 修改订单状态    判断前端传来的状态【只允许取消、确认收货】   ALREADYCANCEL	，ALREADYFINISH
+接口路径：http://localhost:8282/web/api?getDataIdent=Y&apiNumber=703_updateOrderStatus & params={"orderId":"9a83610c-fb6f-4c12-a123-a01a2f6eb72d","status":"ALREADYPAYMENT"}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"MSG":"已取消订单!","STATE":"SUCCESS"},"resultType":1}
+
+
+接口编号：30(未测试) 
+接口说明： 根据code获取用户信息
+接口路径：http://localhost:8282/web/api?getDataIdent=Y&apiNumber=703_getUserInfoByCode&params={"code":"xxx"}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：
+
+
+接口编号：31(完成) updateUserPhone
+接口说明： 修改用户手机号码
+接口路径：/api?getDataIdent=Y&apiNumber=703_updateUserPhone&params={"userId":"xxx","phone":"xxx","authCode":"验证码"}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"MSG":"电话号码修改成功!","STATE":"SUCCESS"},"resultType":1}
+
+
+
+接口编号：32(完成) getwxjsConfig
+接口说明： 获取微信js签名信息
+接口路径：/api?getDataIdent=Y&apiNumber=703_getwxjsConfig&params={}
+接口类型：get
+接口参数类型：json
+接口返回数据类型：json
+接口参数：
+接口返回数据：{"resultMsg":"接口调用成功！","resultData":{"wxjsConfig":{"timestamp":"1459301949","appid":"wx06f6162b4304cf67","nonceStr":"c6aa22c9-4717-4ecd-8e22-e5d9ae48b1b8","jsapi_ticket":"sM4AOVdWfPE4DxkXGEs8VLaw2Xhfl9bfya-ySaBXTPQDUY70fx9Z6NKubBlf_2w8-OHl3wydFoWAV9HyjKiyaw","signature":"b8226916b9c40b5980e0f631e1c14691426c5ca0","url":"http://dev:8098/lunch/api?getDataIdent=Y&apiNumber=703_getwxjsConfig&params={}"},"STATE":"SUCCESS","MSG":"操作成功"},"resultType":1}
+
+
+
+
+
+微信头像接口
+小龙：http://wx.qlogo.cn/mmopen/Q3auHgzwzM6yibVFkkv9QOkBX1ooRju5hVmuYglibutSY2jJp9ROnZVRrX0IY4rjevLdRxWZLOkiaaRicI3aoRxxPw/0	
+
+刘雨：http://wx.qlogo.cn/mmopen/MVGGo0fbSedl893m54gTwbicUG0wrjssyx06yoYTrS6ke7eoT0sjCF4dvLL27oqjIQTvfd5hdibiaTp9xS3HXuU8Oc9YfL8jqUr/0	
+
+
+后台接口文件：
+LunchApiServiceImpl.java
+LunchApiService.java
+
+svn  	：	https://dev/svn/lunch-weixin/trunk_v3
+
+
+
+用户id：
+00066871e24640788596fc2bd66ee699	马素瑞	
+
+002c4cd11b694ff7a4a630b731233467	刘雨
+
+
+sessionStorage  存对象例子：
+
+var obj = { name:'Jim' }; 
+var str = JSON.stringify(obj); 
+ 
+//存入 
+sessionStorage.obj = str; 
+//读取 
+str = sessionStorage.obj; 
+//重新转换为对象 
+obj = JSON.parse(str);
+

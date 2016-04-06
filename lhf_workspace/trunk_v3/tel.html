@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="robots" content="index">
+<meta name="googlebot" content="index">
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>乐盒饭</title>
+<link href="css/amazeui.css" type="text/css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<header data-am-widget="header" class="am-header am-header-orange">
+        <div class="am-header-left am-header-nav">
+            <a href="javascript:history.go(-1);"><span class="am-icon-chevron-left"></span> </a>
+        </div>
+
+        <h1 class="am-header-title">送餐地址</h1>
+    </header>
+<div class="siteList">
+
+        <dl><dt>手　机：</dt><dd><input class="txt txt_tel" id="txt_tel" placeholder="请输入手机号码"></dd><a href="javascript:;" class="btn_code" id="btn_codeLink">获取验证码</a></dd></dl>
+        <dl><dt>验证码：</dt><dd><input class="txt txt_code" id="txt_code" placeholder="请输入验证码"></dd></dl>
+</div>
+<div class="btn"><a href="#" class="btnLinkRed" id="submitLink">确定</a></div>
+
+
+<!---->
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert-phone">
+    <div class="am-modal-dialog">
+        <div class="am-modal-bd">请输入11位手机号码</div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">确定</span>
+        </div>
+    </div>
+</div>
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert-code">
+    <div class="am-modal-dialog">
+        <div class="am-modal-bd">请输入验证码</div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">确定</span>
+        </div>
+    </div>
+</div>
+<script language="JavaScript" type="text/javascript" src="js/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/amazeui.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/ajaxUtils.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/front-engine.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/tel/tel.js"></script>
+</body>
+</html>
